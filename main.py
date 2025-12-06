@@ -30,7 +30,7 @@ if st.button("시 작성 요청"):
         try:
             # Gemini 모델 설정
             llm = ChatGoogleGenerativeAI(
-                model="gemini-pro", 
+                model="gemini-1.5-pro", 
                 google_api_key=api_key
             )
 
@@ -55,4 +55,5 @@ if st.button("시 작성 요청"):
 
         except Exception as e:
             st.error(f"에러가 발생했습니다: {e}")
+
 
